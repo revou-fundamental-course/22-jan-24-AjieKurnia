@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou-AKSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- Banner Section -->
+    <section id="navbanner">
+        <!-- Your banner content goes here -->
+        <div class="logo">
+            <h4>RevoU</h4>
+        </div>
+        <ul class="topnav" id="navBanner">
+            <li class="list active"><a href="#home">Home</a></li>
+            <li class="list "><a href="#ourPackage">Picture</a></li>
+            <li class="list "><a href="#callToAction">Our Package</a></li>
+            <li class="list"><a href="#contactUs">Call Us</a></li>
+        </ul>
+        <ul id="icon">
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class='bx bx-list-ul'></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <div class="border">
+        <section class="tittleTopBorder" id="home">
+            <div>
+                <h2>Top Rated E-Groceries Shop in <br> Indonesia</h2>
+                <h4>Every Day with best Ingrediets </h4>
+            </div>
+        </section>
+        <!-- Our Package Section -->
+        <section id="ourPackage">
+            <!-- Your Our Package content goes here -->
+    
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/10-unique-things-to-do-in-east-java/image2.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="https://lp-cms-production.imgix.net/2022-03/GettyRF_531114869.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="https://www.panorama-destination.com/wp-content/uploads/2017/02/rajaampat3-1024x668.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            <br>
+            <div class="allDot">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <h4 id="ImageIntro">"Setiap hari beli sayur buah yang fresh disini"</h4>
+            <div class="Writer">
+                <div class="image">
+                    <img src="assets/imgUser/user-removebg-preview.png" alt="Image">
+                </div>
+                <div class="nameWriter">
+                    <h4 id="writerName"><b>Florence Hughes</b></h4>
+                    <h5>Ibu Rumh Tangga, 28</h5>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Call to Action Section -->
+        <section id="callToAction">
+            <!-- Your Call to Action content goes here -->
+            <div class="introCall">
+                <h3><b>Use this to provide users with more information about yout offer. Consider it a follow-up to your headline and explain the benefits of your service or product</b></h3>
+            </div>
+            <div class="contentNumberCall">
+                <div class="number-Content">
+                    <div id="number">1</div>
+                    <div id="contentNum">Your first feature, written in the form of a benefit statement</div>
+                </div>
+                <div class="number-Content">
+                    <div id="number">2</div>
+                    <div id="contentNum">Your second feature, written in the form of a benefit statement</div>
+                </div>
+                <div class="number-Content">
+                    <div id="number">3</div>
+                    <div id="contentNum">Your thrid feature, written in the form of a benefit statement</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Us Form -->
+        <section id="contactUs">
+            <div class="introContactUs">
+                <h2>Contact Us</h2>
+                <h4> Sales akan menghubungu anda 1 x 24 jam setelah data kami terima.</h4>
+            </div>
+            <div class="contentFormContactUs">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="username">Your Name:</label>
+                        <input type="text" id="username" name="username" placeholder="First and last name">
+                        <div class="error-message" id="usernameError"></div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Example@email.com">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="selectOption">What are you interested in?</label>
+                        <select id="selectOption" name="selectOption">
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="DA">Data Analyst</option>
+                            <option value="SE">Software Engineer</option>
+                            <option value="SD">Software Development</option>
+                        </select>
+                        <div class="error-message" id="selectOptionError"></div>
+                    </div>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section id="footer">
+        <p>Copyright 2024 &copy; Katik All Rights Reserved</p>
+        <p>Made by &hearts; Ajie Kurnia S S</p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
